@@ -14,11 +14,9 @@ tags:
 ### 安装 JDK
 
 - `/etc/profile`
-
   `sudo vi /etc/profile`，设置 `JAVA` 路径，如下图所示：
   ![etcProfile](\media\files\2017\07\04\etcProfile.png)
 - `~/.bashrc`
-
   `sudo vi ~./bashrc`，设置 `JAVA_HOME`，如下图所示：
   ![bashrc](\media\files\2017\07\04\bashrc.png)
 - 执行 `java -version` 检查效果。
@@ -26,11 +24,8 @@ tags:
 ### 修改主机名
 
 - `sudo vi /etc/hostname`
-
   更改 master 节点名称，这里我将其更改为`Master`。
-
 - `sudo vi /etc/hosts`
-
   修改主机名与 IP 的映射关系，内容如下图所示，master 其余五台 slave 机器的 IP 即主机名按如下方式填写。
 
   ![modifyNameIP](\media\files\2017\07\04\modifyNameIP.png)

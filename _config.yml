@@ -1,3 +1,7 @@
+
+permalink: /:year/:month/:day/:title.html
+name: "Rinbow"
+
 markdown: kramdown
 kramdown:
     input: GFM
@@ -11,11 +15,6 @@ gems:
     - jemoji
 #     - jekyll-mentions
 highlighter: rouge
-
-
-permalink: /:year/:month/:day/:title.html
-name: "Rinbow"
-#markdown: rdiscount
 
 author: "Rinbow"
 atom-baseurl: "https://rinbow.github.com"

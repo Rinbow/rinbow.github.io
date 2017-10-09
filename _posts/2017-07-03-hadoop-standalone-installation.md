@@ -82,7 +82,6 @@ Hadoop 的配置文件位于 `/usr/local/hadoop/etc/hadoop/` 中，单机模�
 - 访问 Web 页面
   成功启动后，可以访问 Web 界面 `http://ip_address:50070` 来查看 Hadoop 的信息。
   ![webHadoop](\media\files\2017\07\03\webHadoop.png)
-
 - 配置 PATH 环境变量
   上面的教程中，我们都是先进入到 `/home/bjut/hadoop-2.6.0` 目录中，再执行  `sbin/hadoop`，实际上等同于运行 `/home/bjut/hadoop-2.6.0/sbin/hadoop`。我们可以将 Hadoop 命令的相关目录加入到 PATH 环境变量中，这样就可以直接通过 `start-dfs.sh` 开启 Hadoop，也可以直接通过 `hdfs` 访问 HDFS 的内容，方便平时的操作。
   执行 `vi ~/.bashrc`，在文件中添加 `export PATH=$PATH:/home/bjut/hadoop-2.6.0/bin:/home/bjut/hadoop-2.6.0/sbin`，添加后执行 `source ~/.bashrc` 使设置生效，生效后，在任意目录中，都可以直接使用 `hdfs dfs -ls input` 等命令，而无需使用绝对目录。

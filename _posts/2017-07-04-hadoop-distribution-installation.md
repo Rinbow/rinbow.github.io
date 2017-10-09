@@ -27,7 +27,6 @@ tags:
   更改 master 节点名称，这里我将其更改为`Master`。
 - `sudo vi /etc/hosts`
   修改主机名与 IP 的映射关系，内容如下图所示，master 其余五台 slave 机器的 IP 即主机名按如下方式填写。
-
   ![modifyNameIP](\media\files\2017\07\04\modifyNameIP.png)
 
 ### SSH 配置
@@ -35,30 +34,23 @@ tags:
 为了让 Master 节点可以无密码登录到各个 Slave 节点上，需要配置 SSH。
 
 - 首先执行 `ssh localhost` 生成 `.shh` 目录，然后 `exit` 退出当前 SSH 登录
-
 - ```shell
   cd ~/.ssh/
   ssh-keygen -t rsa #遇到提示直接按回车即可
   cat id_rsa.pub >> authorized_keys #加入授权
   ```
-
 - 执行 `ssh localhost` 测试是否成功授权
 
 ### 安装 Hadoop
 
 - 文件 `slave`
-
   ```shell
   cd /home/bjut/hadoop-2.6.0/etc/hadoop
   vi slaves
   ```
-
   由于我有 5 台 Slave 节点，所以文件内容为：
-
-   ![slaves](\media\files\2017\07\04\slaves.png)
-
+  ![slaves](\media\files\2017\07\04\slaves.png)
 - 文件 `core-site.xml`
-
   ```xml
   <property>
       <name>fs.defaultFS</name>
@@ -70,9 +62,7 @@ tags:
       <description>Abase for other temporary directories.</description>
   </property>
   ```
-
 - 文件 `hdfs-site.xml`
-
   ```xml
   <property>
       <name>dfs.namenode.secondary.http-address</name>
@@ -91,7 +81,6 @@ tags:
       <value>5</value>
   </property>
   ```
-
 - 文件 `mapred-site.xml`
 
   这个文件不存在，首先需要从模板中复制一份：

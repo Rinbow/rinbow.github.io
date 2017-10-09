@@ -2,6 +2,7 @@
 layout: post
 title: 一个 activity 中垂直排列两个 listview 
 tags:
+  - program
   - android
 ---
 

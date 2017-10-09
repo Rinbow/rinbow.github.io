@@ -2,6 +2,7 @@
 title: 将 GPS 轨迹数据显示在百度地图上
 layout: post
 tags:
+  - program
   - trajectory
   - bigdata
 ---

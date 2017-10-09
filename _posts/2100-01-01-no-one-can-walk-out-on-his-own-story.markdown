@@ -2,6 +2,7 @@
 title: No one can walk out on his own story
 layout: post
 tags:
+  - life
   - photography
   - cover
 ---

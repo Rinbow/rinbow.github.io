@@ -1,7 +1,8 @@
 ---
 layout: post
 title: 调整 Java 中窗口界面风格
-tags: 
+tags:
+  - program
   - java
 ---
 

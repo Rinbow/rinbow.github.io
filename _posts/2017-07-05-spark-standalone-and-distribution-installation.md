@@ -14,15 +14,12 @@ tags:
 ### 环境配置
 
 - `/etc/profile`
-
   ```shell
   sudo vi /etc/profile
   export SCALA_HOME=/home/bjut/scala-2.11.7
   export PATH=$SCALA_HOME/bin:$PATH
   ```
-
 - `~./bashrc`
-
   ```shell
   vi ~/.bashrc
   export HADOOP_HOME=/home/bjut/hadoop-2.6.0
@@ -33,9 +30,7 @@ tags:
   export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
   export PATH=$PATH:$SCALA_HOME/bin:$SPARK_HOME/bin:/home/bjut/hadoop-2.6.0/bin:/home/bjut/hadoop-2.6.0/sbin
   ```
-
 - 让配置生效
-
   ```shell
   source /etc/proifle
   source ~/.bashrc
@@ -58,7 +53,6 @@ sbin/start-all.sh
 ### Spark 配置
 
 - 文件 `spark-env.sh`
-
   ```shell
   cd spark-1.5.2-bin-hadoop2.6/conf
   cp spark-env.sh.template spark-env.sh
@@ -72,10 +66,7 @@ sbin/start-all.sh
   export SPARK_WORKER_PORT=8092
   export SPARK_WORKER_MEMORY=5000m
   ```
-
-
 - 文件 `slaves`
-
   ```shell
   cp slaves.template slaves
   172.21.20.97
@@ -85,10 +76,7 @@ sbin/start-all.sh
   172.21.20.221
   172.21.20.127
   ```
-
-
 - 启动 Spark 集群
-
   ```shell
   sbin/start-all.sh
   ```

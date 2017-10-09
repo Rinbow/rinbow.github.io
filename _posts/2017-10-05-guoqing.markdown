@@ -1,0 +1,15 @@
+---
+title: 国庆
+layout: post
+guid: urn:uuid:de8d598d-6f35-4c7b-ab23-1951062dadfc
+tags:
+  - photography
+  - leica
+  - m6
+  - c-biogon-35
+  - misc
+---
+
+![tiananmen](\media\files\2017\10\05\tiananmen.jpg)
+
+以前总觉得土共土，但是第一次亲眼看到天安门的时候还是小小激动了下~

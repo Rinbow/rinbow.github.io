@@ -47,4 +47,4 @@ tags:
 
 ## 参考资料
 
-- [http://blog.csdn.net/u012592062/article/details/51966649](http://blog.csdn.net/u012592062/article/details/51966649) 
+- [修改pip安装源加快python模块安装](http://blog.csdn.net/u012592062/article/details/51966649) 

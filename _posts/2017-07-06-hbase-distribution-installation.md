@@ -20,13 +20,10 @@ export PATH=$PATH:$HBASE_HOME/bin
 ## 安装 HBase
 
 - 文件 `hbase-env.sh`
-
   ```shell
   export JAVA_HOME=/home/bjut/jdk1.7
   ```
-
 - 文件 `hbase-site.xml`
-
   ```xml
   <configuration>
       <property>
@@ -52,10 +49,7 @@ export PATH=$PATH:$HBASE_HOME/bin
       </property>
   </configuration>
   ```
-
-
 - 文件 `regionservers`
-
   ```
   Slave1
   Slave2
@@ -63,12 +57,8 @@ export PATH=$PATH:$HBASE_HOME/bin
   Slave4
   Slave5
   ```
-
-
 - 发送配置好的 hbase 到各个 slave 节点
-
 - 启动 HBase
-
   启动 HBase 时要确保 hdfs 已经启动，HBase 的启动顺序为：HDFS -> Zookeeper -> HBase。
 
   在 Master 节点执行 `jps`，结果如下：
@@ -88,11 +78,8 @@ export PATH=$PATH:$HBASE_HOME/bin
 ## 参考资料
 
 - [hadoop2.6完全分布式安装HBase1.1](https://yq.aliyun.com/articles/32314)
-
 - [Hbase的regionServer无法启动报ClockOutOfSyncException解决方法](http://myhadoop.iteye.com/blog/2044253)
-
 - [Hbase完全分布式集群安装配置(Hbase1.0.0,Hadoop2.6.0)](http://blog.csdn.net/wuwenxiang91322/article/details/44684655)
-
 - [手把手教你安装Hbase,一次成功！](http://blog.csdn.net/achuo/article/details/51170946)
 
   ​

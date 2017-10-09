@@ -14,14 +14,10 @@ tags:
 ### 安装 JDK
 
 - `/etc/profile`
-
   `sudo vi /etc/profile`，设置 `JAVA` 路径，如下图所示：
-
   ![etcProfile](\media\files\2017\07\04\etcProfile.png)
 - `~/.bashrc`
-
   `sudo vi ~./bashrc`，设置 `JAVA_HOME`，如下图所示：
-
   ![bashrc](\media\files\2017\07\04\bashrc.png)
 - 执行 `java -version` 检查效果。
 

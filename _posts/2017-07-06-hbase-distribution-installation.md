@@ -77,5 +77,3 @@ export PATH=$PATH:$HBASE_HOME/bin
 - [Hbase的regionServer无法启动报ClockOutOfSyncException解决方法](http://myhadoop.iteye.com/blog/2044253)
 - [Hbase完全分布式集群安装配置(Hbase1.0.0,Hadoop2.6.0)](http://blog.csdn.net/wuwenxiang91322/article/details/44684655)
 - [手把手教你安装Hbase,一次成功！](http://blog.csdn.net/achuo/article/details/51170946)
-
-  ​

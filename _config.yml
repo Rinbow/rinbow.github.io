@@ -1,19 +1,10 @@
-markdown: kramdown
-kramdown:
-    input: GFM
-gems:
-    - jekyll-github-metadata
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-#     - jekyll-mentions
-highlighter: rouge
+markdown: rdiscount
+
+
+highlighter: pygments
 permalink: /:year/:month/:day/:title.html
 name: "Rinbow"
-#markdown: kramdown
+markdown: rdiscount
 
 author: "Rinbow"
 atom-baseurl: "https://rinbow.github.com"

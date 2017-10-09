@@ -30,28 +30,21 @@ tags:
 第二种方式是添加配置文件。
 
 1. Linux 或 OSX 系统
-
    执行以下命令：
-
    ```shell
    mkdir ~/.pip
    cd ~/.pip
    touch pip.conf
    ```
-
    在 pip.conf 文件中填写以下内容：
-
    ```
    [global]
    trusted-host=mirrors.aliyun.com
    index-url=http://mirrors.aliyun.com/pypi/simple/
    ```
-
 2. Windows 系统
-
    在个人用户目录（`C:\Users\username\`）下创建 pip 文件夹，并在该文件夹内创建 pip.ini 文件，在文件内填入以上内容即可。
 
 ## 参考资料
 
 - [http://blog.csdn.net/u012592062/article/details/51966649](http://blog.csdn.net/u012592062/article/details/51966649) 
-

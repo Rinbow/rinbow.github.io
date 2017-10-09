@@ -59,9 +59,7 @@ export PATH=$PATH:$HBASE_HOME/bin
   ```
 - 发送配置好的 hbase 到各个 slave 节点
 - 启动 HBase
-
   启动 HBase 时要确保 hdfs 已经启动，HBase 的启动顺序为：HDFS -> Zookeeper -> HBase。
-
   在 Master 节点执行 `jps`，结果如下：
    ![masterHbaseJps](\media\files\2017\07\06\masterHbaseJps.png)
   在 Slave 节点执行 `jps`，结果如下：

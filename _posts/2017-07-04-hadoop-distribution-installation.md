@@ -82,22 +82,16 @@ tags:
   </property>
   ```
 - 文件 `mapred-site.xml`
-
   这个文件不存在，首先需要从模板中复制一份：
-
   `cp mapred-site.xml.template mapred-site.xml`
-
   然后配置如下：
-
   ```xml
   <property>
       <name>mapreduce.framework.name</name>
       <value>yarn</value>
   </property>
   ```
-
 - 文件 `yarn-site.xml`
-
   ```xml
   <property>
       <name>yarn.resourcemanager.hostname</name>
@@ -118,30 +112,20 @@ tags:
 ### 修改主机名
 
 - `sudo vi /etc/hostname`
-
   slave节点分别命名为Slave1、Slave2、...
-
 - `sudo vi /etc/hosts`
-
   内容同Master节点一样。
 
 ### SSH 配置
 
 - `ssh localhost` (为了产生 `.ssh` 文件夹)
-
 - 执行 `scp ~/.ssh/id_rsa.pub bjut@SlaveN:/home/bjut/` 将 Master 节点下生成的 `id_rsa.pub` 文件发送到各个 Slave 节点，然后在各个 Slave 节点上将 ssh 公钥保存到相应位置，执行 `cat ~/id_rsa.pub >> ~/.ssh/authorized_keys`
-
 - 在 Master 节点上执行 `ssh SlaveN` 测试是否授权成功
-
-
 - 安装 Hadoop
-
   在 Master 节点上发送配置好的 hadoop 文件夹到各个 slave 节点上。
-
   ```shell
   scp -r hadoop-2.6.0/ bjut@SlaveN:/home/bjut/
   ```
-
 
 ## 参考资料
 

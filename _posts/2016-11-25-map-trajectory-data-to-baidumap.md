@@ -8,7 +8,10 @@ tags:
   - bigdata
   - html
   - javascript
+<<<<<<< HEAD:_posts/2016-11-25-map-trajectory-data-to-baidumap.md
   - baidumap
+=======
+>>>>>>> f39ca101f80360e1e4ef5980710bdb7f56618654:_posts/2016-11-25-map-trajectory-data-to-baidumap.md
 ---
 
 在用关联分析做轨迹频繁区域挖掘时，需要把 GPS 轨迹点显示在地图上以达到直观的可视化效果，在网上搜了半天后发现百度地图 API 中有可用的接口可以实现这样的效果。

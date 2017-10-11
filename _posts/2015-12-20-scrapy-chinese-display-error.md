@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 解决 Scrapy 抓取中文内容显示不正常问题
+categories: [Python, Scrapy]
 tags:
   - program
   - python

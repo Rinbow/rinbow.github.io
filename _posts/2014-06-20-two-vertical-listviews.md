@@ -1,9 +1,11 @@
 ---
 layout: post
 title: 一个 activity 中垂直排列两个 listview 
+categories: [Java, Android]
 tags:
   - program
   - android
+  - java
 ---
 
 原生 Android 并不支持在一个 activity 中垂直地排列两个 listview，本文章中介绍了一种实现方法。

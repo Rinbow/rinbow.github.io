@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 动态规划之背包问题
+categories: [Algorithms, DynamicPrograming]
 tags:
   - program
   - algorithms

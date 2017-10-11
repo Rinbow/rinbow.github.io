@@ -1,10 +1,14 @@
 ---
 title: 将 GPS 轨迹数据显示在百度地图上
 layout: post
+categories: [BigData, HTML, JavaScript]
 tags:
   - program
   - trajectory
   - bigdata
+  - html
+  - javascript
+  - baidumap
 ---
 
 在用关联分析做轨迹频繁区域挖掘时，需要把 GPS 轨迹点显示在地图上以达到直观的可视化效果，在网上搜了半天后发现百度地图 API 中有可用的接口可以实现这样的效果。

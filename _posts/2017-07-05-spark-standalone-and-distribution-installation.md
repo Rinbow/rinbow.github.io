@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Spark 单机和分布式安装笔记
+categories: [BigData, Spark]
 tags:
   - program
   - bigdata

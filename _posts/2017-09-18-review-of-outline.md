@@ -1,6 +1,7 @@
 ---
 title: 复习大纲
 layout: post
+categories: [Other]
 tags:
   - program
   - other

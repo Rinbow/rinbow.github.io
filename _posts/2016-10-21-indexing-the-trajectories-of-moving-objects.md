@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 【译】移动对象轨迹的索引
+categories: [BigData, DataMining, Translate]
 tags:
   - program
   - bigdata

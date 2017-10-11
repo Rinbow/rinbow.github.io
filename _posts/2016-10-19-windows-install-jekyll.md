@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Windows 下安装 Jekyll 及启动遇到的问题
+categories: [Jekyll]
 tags:
   - program
   - windows
@@ -48,7 +49,7 @@ tags:
   解决方案是去 [http://rubyinstaller.org/downloads](http://rubyinstaller.org/downloads) 下载 dev kit，按照 [http://github.com/oneclick/rubyinstaller/wiki/Development-Kit](http://github.com/oneclick/rubyinstaller/wiki/Development-Kit) 安装 dev kit。
 
   主要步骤是：
-  
+
   - 如果原系统已经安装了旧版的 dev kit，删除它。
   - 下载上面链接的 dev kit。
   - 解压下载下来的文件到任意目录，如 `e:/ruby/devkit` （目录不能有空格）。
@@ -72,14 +73,16 @@ tags:
   > ```
   > repository: username/repo-name
   > ```
-  来源链接：[https://github.com/jekyll/github-metadata](https://github.com/jekyll/github-metadata)
+  > 来源链接：[https://github.com/jekyll/github-metadata](https://github.com/jekyll/github-metadata)
 - 这个问题解决之后还不算完，还可能有一个权限问题：
   ```shell
   SSL_connect returned=1 errno=0 state=SSLv3 read server certificate B: certificate verify failed
   ```
-   就是上边这个玩意儿，解决办法是去 [https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pem) 把文件保存到本地，重名为 `.pem` 结尾的文件，然后打开 我的电脑 -> 高级系统设置 -> 环境变量，创建一个新的系统变量：
+  就是上边这个玩意儿，解决办法是去 [https://curl.haxx.se/ca/cacert.pem](https://curl.haxx.se/ca/cacert.pem) 把文件保存到本地，重名为 `.pem` 结尾的文件，然后打开 我的电脑 -> 高级系统设置 -> 环境变量，创建一个新的系统变量：
+
   SSL_CERT_FILE: your_path\cacert.pem
   重启命令行，再次执行 `jekyll serve`，如果碰到这样一个错误：
+
   ```shell
     Please report a bug if this causes problems.
     C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/bundler-1.13.5/lib/bundler/runtime.rb:40:in `block in setup': You have already activated jekyll-sass-converter 1.4.0, but your Gemfile requires jekyll-sass-converter 1.3.0. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)

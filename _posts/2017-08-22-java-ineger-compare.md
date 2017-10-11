@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Java 中 Integer 的各种比较
+categories: [Java]
 tags:
   - program
   - java

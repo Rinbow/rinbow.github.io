@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Zookeeper 分布式安装笔记
+categories: [BigData, Zookeeper]
 tags: 
   - program
   - bigdata
@@ -47,8 +48,11 @@ export PATH=$PATH:$ZOOKEEPER_HOME/bin
   ```
   将配置好的 zookeeper 依次发送到每个 slave 节点。
 - 文件 `myid`
+
   修改各个节点id值。
+
   在之前配置的 dataDir 指定的目录下创建一个 myid 文件，里面内容为一个数字，用来标识当前主机，Master 为 1，Slave1 为 2，Slave3 为 3，以此类推。
+
   ```shell
   mkdir -p /tmp//zookeeper
   cd /tmp/zookeeper

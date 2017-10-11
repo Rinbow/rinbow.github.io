@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 【转】用 Python 中的 encode 与 decode 解决字符串乱码问题
+categories: [Python]
 tags:
   - program
   - python

@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 【转】贝塞尔曲线简明介绍
+categories: [Bézier]
 keywords:
   - program
-  - Bézier_curve
+  - bézier_curve
 ---
 
 相信很多同学都知道「[贝塞尔曲线](http://en.wikipedia.org/wiki/B%C3%A9zier_curve)」这个词，我们在很多地方都能经常看到。但是，可能并不是每位同学都清楚地知道，到底什么是「贝塞尔曲线」，又是什么特点让它有这么高的知名度。

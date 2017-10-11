@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 服务器上搭建 Git 以及客户端操作
+categories: [Git]
 tags: 
   - program
   - git
@@ -27,16 +28,21 @@ tags:
 ## 客户端操作步骤
 
 - 安装 Git 
+
   Linux 下执行 `sudo apt-get install git`，windows 下自行搜索 git for windows 下载安装即可。
 - 克隆远程仓库到本地
+
   打开 gitbash，切换到任意工作目录下，执行以下命令:
+
   ```shell
   git clone git@bigdata20:/home/git/BigdataGroupResources.git
   ```
   看到提示输入密码后，输入 Git 账户的密码 `git`，就成功将远程仓库克隆到本地了。
   *注意：要在 hosts 文件里将 bigdata20 映射到相应的 IP 地址，否则就要将上面命令中的 bigdata20 替换成相应 IP 地址。*
 - 提交或修改自己本地文件到服务器上
+
   进入到刚刚克隆到本地的仓库目录中（如果已克隆到了本地，请先执行第三步更新本地仓库），然后将自己修改过或新添加的文件放到仓库中（文档类文件放到 documentResources 文件夹下，代码类文件放到自建文件夹），执行以下命令：
+
   ```shell
   git add yourfilename
   git commit -m "your comment"

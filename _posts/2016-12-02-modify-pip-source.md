@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 修改 pip 源以加快 Python 模块安装速度
+categories: [Python]
 tags:
   - program
   - python
@@ -30,7 +31,9 @@ tags:
 第二种方式是添加配置文件。
 
 1. Linux 或 OSX 系统
+
    执行以下命令：
+
    ```shell
    mkdir ~/.pip
    cd ~/.pip
@@ -43,6 +46,7 @@ tags:
    index-url=http://mirrors.aliyun.com/pypi/simple/
    ```
 2. Windows 系统
+
    在个人用户目录（`C:\Users\username\`）下创建 pip 文件夹，并在该文件夹内创建 pip.ini 文件，在文件内填入以上内容即可。
 
 ## 参考资料

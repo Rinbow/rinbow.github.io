@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Java 中的异常处理笔记
+categories: [Java]
 tags:
   - program
   - java

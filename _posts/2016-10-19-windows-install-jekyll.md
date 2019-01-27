@@ -1,12 +1,6 @@
 ---
-layout: post
 title: Windows 下安装 Jekyll 及启动遇到的问题
-categories: [Jekyll]
-tags:
-  - program
-  - windows
-  - jekyll
-  - ruby
+tags: [jekyll]
 ---
 
 想在本地预览 Jekyll 博客，需要安装 Jekyll，刚倒腾了半天，说说我在 Win10 系统下安装 Jekyll 的惨痛经历吧。

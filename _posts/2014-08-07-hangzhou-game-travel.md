@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 西湖龙井
-categories: [Life]
 tags: [life, hangzhou]
 ---
 

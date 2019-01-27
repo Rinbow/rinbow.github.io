@@ -1,11 +1,6 @@
 ---
-layout: post
 title: HBase 分布式安装笔记
-categories: [BigData, HBase]
-tags:
-  - program
-  - bigdata
-  - hbase
+tags: [bigdata, hbase]
 ---
 
 实验室第N次服务器配置，简单记录以备不时之需。
@@ -84,7 +79,9 @@ export PATH=$PATH:$HBASE_HOME/bin
 
 ![webHbase](\media\files\2017\07\06\webHbase.png)
 
-## 参考资料
+---
+
+### 参考资料
 
 - [hadoop2.6完全分布式安装HBase1.1](https://yq.aliyun.com/articles/32314)
 - [Hbase的regionServer无法启动报ClockOutOfSyncException解决方法](http://myhadoop.iteye.com/blog/2044253)

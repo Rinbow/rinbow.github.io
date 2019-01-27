@@ -1,11 +1,6 @@
 ---
-layout: post
 title: 解决 Scrapy 抓取中文内容显示不正常问题
-categories: [Python, Scrapy]
-tags:
-  - program
-  - python
-  - scrapy
+tags: [python, crawler]
 ---
 
 用 Scrapy 爬取中文内容保存到 JSON 文件时总是出现 Unicode 码，解决办法如下。

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 未名湖
-categories: [Life]
 tags: [life, beijing]
 ---
 

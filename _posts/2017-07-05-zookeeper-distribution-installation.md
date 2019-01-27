@@ -1,16 +1,11 @@
 ---
-layout: post
 title: Zookeeper 分布式安装笔记
-categories: [BigData, Zookeeper]
-tags: 
-  - program
-  - bigdata
-  - zookeeper
+tags: [bigdata, zookeeper, distributed]
 ---
 
 实验室第N次服务器配置，简单记录以备不时之需。
 
-## 环境配置
+### 环境配置
 
 ```shell
 sudo vi /etc/profile
@@ -20,11 +15,11 @@ export PATH=$PATH:$ZOOKEEPER_HOME/bin
 
 执行 `source /etc/profile` 使用设置生效。
 
-## Zookeeper 配置 
+### Zookeeper 配置 
 
 - 文件 `zoo.cfg`
   ```shell
-  cp conf/zoo_sample.cfg zoo.cfg
+  cp conf/zoo_sample.cfg conf/zoo.cfg
   vi zoo.cfg
   # The number of milliseconds of each tick
   tickTime=2000
@@ -60,7 +55,7 @@ export PATH=$PATH:$ZOOKEEPER_HOME/bin
   echo "1" > myid
   ```
 
-## 启动 Zookeeper
+### 启动 Zookeeper
 
 按照上述配置的顺序**依次**启动，并且在各个节点上都要启动 Zookeeper，在 shell 中输入
 
@@ -70,7 +65,9 @@ zkServer.sh status #查看Zookeeper服务的状态，你会看到哪个节点是
 zkServer.sh stop  #停止Zookeeper服务，每个节点都要停止
 ```
 
-## 参考资料
+---
+
+### 参考资料
 
 - [Zookeeper分布式集群的安装与配置](http://blog.csdn.net/jpzhu16/article/details/51751363)
 - [初识zookeeper（一）之zookeeper的安装及配置](http://www.cnblogs.com/bookwed/p/4599829.html)

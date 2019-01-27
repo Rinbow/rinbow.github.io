@@ -1,14 +1,6 @@
 ---
 title: 将 GPS 轨迹数据显示在百度地图上
-layout: post
-categories: [BigData, HTML, JavaScript]
-tags:
-  - program
-  - trajectory
-  - bigdata
-  - html
-  - javascript
-  - baidumap
+tags: [trajectory, frontend]
 ---
 
 在用关联分析做轨迹频繁区域挖掘时，需要把 GPS 轨迹点显示在地图上以达到直观的可视化效果，在网上搜了半天后发现百度地图 API 中有可用的接口可以实现这样的效果。
@@ -329,7 +321,9 @@ console.log(bd['lon'] + "," + bd['lat']); // 116.33993249456921,39.9979039764307
 
 ![QQ截图20161126223417](\media\files\2016\11\25\QQ截图20161126223417.png)
 
-## 参考资料
+---
+
+### 参考资料
 
 - [GPS坐标互转：WGS-84(GPS)、GCJ-02(Google地图)、BD-09(百度地图)](https://www.oschina.net/code/snippet_260395_39205)
 - [如何解决坐标转换、坐标偏移问题](http://mp.weixin.qq.com/s?__biz=MzA5MDE4MDMyOQ==&mid=200196710&idx=1&sn=1c455262dc9164b50d9af279b39fc689&uin=MjEzNjQ5MzMwMQ==)

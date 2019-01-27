@@ -1,10 +1,6 @@
 ---
-layout: post
 title: Java 中 Integer 的各种比较
-categories: [Java]
-tags:
-  - program
-  - java
+tags: [java]
 ---
 
 Java 中 Integer 的比较问题一直比较蛋疼，稍不注意就会出错，这里总结一下主要比较方式及区别。

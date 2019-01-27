@@ -1,13 +1,6 @@
 ---
-layout: post
-title: 【译】移动对象轨迹的索引
-categories: [BigData, DataMining, Translate]
-tags:
-  - program
-  - bigdata
-  - database
-  - index
-  - translate
+title: 移动对象轨迹的索引
+tags: [bigdata, trajectory, translate]
 ---
 
 本文翻译自 Dieter Pfoser 的「Indexing the Trajectories of Moving Objects」，这篇文章简要介绍了移动对象轨迹索引领域的基础概念、需要解决的问题、现有的索引方法以及未来的研究方向。

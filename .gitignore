@@ -1,3 +1,5 @@
-_site
+_site/
+.*.un~
+CNAME
 .DS_Store
-.sass-cache
+

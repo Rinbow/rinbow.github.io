@@ -1,7 +1,5 @@
 ---
-layout: post
 title: 奥林匹克公园
-categories: [Life]
 tags: [life, beijing]
 ---
 

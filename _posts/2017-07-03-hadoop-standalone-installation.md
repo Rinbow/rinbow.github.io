@@ -1,11 +1,6 @@
 ---
-layout: post
 title: Hadoop 单机模式安装笔记
-categories: [BigData, Hadoop]
-tags:
-  - program
-  - hadoop
-  - bigdata
+tags: [bigdata, hadoop]
 ---
 
 实验室第N次服务器配置，简单记录以备不时之需。
@@ -95,6 +90,8 @@ Hadoop 的配置文件位于 `/usr/local/hadoop/etc/hadoop/` 中，单机模�
   上面的教程中，我们都是先进入到 `/home/bjut/hadoop-2.6.0` 目录中，再执行  `sbin/hadoop`，实际上等同于运行 `/home/bjut/hadoop-2.6.0/sbin/hadoop`。我们可以将 Hadoop 命令的相关目录加入到 PATH 环境变量中，这样就可以直接通过 `start-dfs.sh` 开启 Hadoop，也可以直接通过 `hdfs` 访问 HDFS 的内容，方便平时的操作。
   执行 `vi ~/.bashrc`，在文件中添加 `export PATH=$PATH:/home/bjut/hadoop-2.6.0/bin:/home/bjut/hadoop-2.6.0/sbin`，添加后执行 `source ~/.bashrc` 使设置生效，生效后，在任意目录中，都可以直接使用 `hdfs dfs -ls input` 等命令，而无需使用绝对目录。
 
-## 参考资料
+---
+
+### 参考资料
 
 - [Hadoop安装教程_单机/伪分布式配置](http://www.powerxing.com/install-hadoop/)

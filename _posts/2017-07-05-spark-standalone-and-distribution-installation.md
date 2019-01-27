@@ -1,11 +1,6 @@
 ---
-layout: post
 title: Spark 单机和分布式安装笔记
-categories: [BigData, Spark]
-tags:
-  - program
-  - bigdata
-  - spark
+tags: [bigdata, spark]
 ---
 
 实验室第N次服务器配置，简单记录以备不时之需。
@@ -82,6 +77,8 @@ sbin/start-all.sh
   sbin/start-all.sh
   ```
 
-## 参考资料
+---
+
+### 参考资料
 
 - [Spark 伪分布式 & 全分布式 安装指南](https://my.oschina.net/leejun2005/blog/394928)

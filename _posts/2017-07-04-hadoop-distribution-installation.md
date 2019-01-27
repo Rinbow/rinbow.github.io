@@ -1,11 +1,6 @@
 ---
-layout: post
 title: Hadoop 分布式安装笔记
-categories: [BigData, Hadoop]
-tags: 
-  - program
-  - hadoop
-  - bigdata
+tags: [bigdata, hadoop]
 ---
 
 实验室第N次服务器配置，简单记录以备不时之需。
@@ -154,6 +149,8 @@ tags:
   scp -r hadoop-2.6.0/ bjut@SlaveN:/home/bjut/
   ```
 
-## 参考资料
+---
+
+### 参考资料
 
 - [Hadoop集群安装配置教程](http://www.powerxing.com/install-hadoop-cluster/)

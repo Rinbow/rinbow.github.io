@@ -1,20 +1,15 @@
 ---
-layout: post
 title: 一个 activity 中垂直排列两个 listview 
-categories: [Java, Android]
-tags:
-  - program
-  - android
-  - java
+tags: [java, android]
 ---
 
 原生 Android 并不支持在一个 activity 中垂直地排列两个 listview，本文章中介绍了一种实现方法。
 
-## 原理
+### 原理
 
 为了实现这种效果，一开始我想到的办法是 listview 中加上一个 footerview，footerview 里面嵌套一个listview，但是实际操作之后发现 footerview 里的 listview 只显示一项，这个问题困扰了半天，一直没有找到合适的解决办法，直到昨天晚上偶然看到一篇博文介绍说，scrollview 里嵌套 listview 也出现了同样的问题，解决办法是动态设置 listview 的高度，于是我用这种方法也试了试，结果还真解决了。
 
-## 关键代码
+### 关键代码
 
 动态设置 listview 的高度：
 
@@ -69,11 +64,11 @@ footerview.xml:
 </LinearLayout>  
 ```
 
-## 实现效果
+### 实现效果
 
 ![twoverticallistviews_screenshot](\media\files\2014\06\20\twoverticallistviews_screenshot.png)
 
-## 代码地址
+### 代码地址
 
 [**TwoVerticalListviews**](https://github.com/Silocean/TwoVerticalListview.git)
 

@@ -1,8 +1,6 @@
 ---
-layout: post
 title: 「圣诞快乐！」
-categories: [Life]
-tags: [life, huangshi, hblg]
+tags: [life, huangshi]
 ---
 
 ![20171011140354](\media\files\2014\12\24\微信图片_20171011140354.jpg)

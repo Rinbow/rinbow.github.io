@@ -1,10 +1,6 @@
 ---
-layout: post
 title: 调整 Java 中窗口界面风格
-categories: [Java]
-tags:
-  - program
-  - java
+tags: [java]
 ---
 
 Java 的 Swing 套件默认的界面窗口太丑了，不过还好 Java 提供了其他几种风格可供替换。

@@ -181,4 +181,4 @@ System.out.println("Average of all prime numbers : " + stats.getAverage());
 
 ### lambda 表达式 vs 匿名类
 
- 既然 lambda 表达式即将正式取代 Java 代码中的匿名内部类，那么有必要对二者做一个比较分析。一个关键的不同点就是关键字 this。匿名类的 this 关键字指向匿名类，而 lambda 表达式的 this 关键字指向包围 lambda 表达式的类。另一个不同点是二者的编译方式。Java编译器将 lambda 表达式编译成类的私有方法。使用了 Java 7的 invokedynamic 字节码指令来动态绑定这个方法。
+ 既然 lambda 表达式即将正式取代 Java 代码中的匿名内部类，那么有必要对二者做一个比较分析。一个关键的不同点就是关键字 this。匿名类的 this 关键字指向匿名类，而 lambda 表达式的 this 关键字指向包围 lambda 表达式的类。另一个不同点是二者的编译方式。Java 编译器将 lambda 表达式编译成类的私有方法。使用了 Java 7 的 invokedynamic 字节码指令来动态绑定这个方法。

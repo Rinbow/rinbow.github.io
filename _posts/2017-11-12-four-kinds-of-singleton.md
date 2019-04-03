@@ -48,14 +48,14 @@ public class Singleton {
 }
 ```
 
-这种方法是在需要获取实例的时候才去创建对象，getInstance() 方法加锁，保证了线程安全，但同时由于是对整个方法上锁，所以也造成了性能的下降。
+这种方法是在需要获取实例的时候才去创建对象，getInstance() 方法加锁，保证了线程安全，但同时由于是对整个对象上锁，所以也造成了性能的下降。
 
 三、双重检测（DCL）
 
 ```java
 public class Singleton {
 
-    private static Singleton singleton;
+    private static volatile Singleton singleton;
 
     private Singleton() {
 
@@ -75,7 +75,7 @@ public class Singleton {
 }
 ```
 
-作为第二种方法的改进版，DCL 缩小了加锁的粒度，保证线程安全的同时提高了性能。在绝大多数情况下能保证正确性，但由于 Java 内存模型的原因偶尔会失败，高并发环境下有极小概率会出错。
+作为第二种方法的改进版，DCL 缩小了加锁的粒度，保证线程安全的同时提高了性能。volatile 保证有序性（禁止指令重排序）和可见性。
 
 四、枚举类型
 

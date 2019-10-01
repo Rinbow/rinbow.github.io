@@ -5,6 +5,8 @@ tags: [linux, rsync]
 
 #### Server 端配置
 
+编辑 /etc/rsyncd.conf 文件
+
 ```
 ######### 全局配置参数 ##########
 # 指定 rsync 端口。默认 873
@@ -208,4 +210,4 @@ echo
 
 ### 参考资料
 
-- https://www.cnblogs.com/f-ck-need-u/p/7220009.html
+- [https://www.cnblogs.com/f-ck-need-u/p/7220009.html](https://www.cnblogs.com/f-ck-need-u/p/7220009.html)

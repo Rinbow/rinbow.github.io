@@ -206,3 +206,6 @@ echo
 * * * * * today=`date +\%Y\%m\%d`; /data/rsync-data/script/rsync_data.sh base2.data >> /data/rsync-data/logs/rsync_data_base2_$today.prod.log 2>&1
 ```
 
+### 参考资料
+
+- https://www.cnblogs.com/f-ck-need-u/p/7220009.html

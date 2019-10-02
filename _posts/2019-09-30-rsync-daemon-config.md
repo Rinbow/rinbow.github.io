@@ -159,6 +159,7 @@ echo "==============[Time now is: `date`] $JOB_NAME job started. =============="
 # default rsync params
 REMOTE_FILE_NAME=""
 LOCAL_FILE_NAME=""
+# rsyncd.passwd内容为server端rsyncd.passwd中配置的密码，注意要去掉"user:"，权限同样设为600
 RSYNC_PASSWORD_FILE="/etc/rsyncd.passwd"
 RSYNC_ACCOUNT=""
 RSYNC_PORT="888"
